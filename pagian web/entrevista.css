@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+body {
+    background-color: #f1f1f1; /* Color de fondo blanco */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina los rellenos predeterminados */
+    font-family: Arial, sans-serif; /* Tipo de letra */
+}
+
+nav {
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px; /* Adjust the height as needed */
+}
+
+.nav-content {
+    display: flex;
+    align-items: center; /* Vertically center contents within nav-content */
+}
+
+.links {
+    display: flex;
+    margin-right: 20px; /* Adjust this value to increase/decrease spacing to the image */
+}
+
+nav a {
+    color: black;
+    text-decoration: none; /* Elimina el subrayado de los vínculos */
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-image {
+    height: 70px;
+    width: auto; /* Maintain aspect ratio */
+    margin-left: 20px; /* Space from the links */
+}
+
+.nav-image2 {
+    height: 86px;
+    width: auto; /* Maintain aspect ratio */
+}
+
+nav a.logo{
+    font-size: 33px;
+    color: #0f2182;
+    font-weight: 600;
+}
+
+nav .links a:not(:last-child){
+    margin-right: 20px;
+}
+
+nav .login button{
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+nav .login button.signup{
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 14px;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    nav,
+    header,
+    h2.separator,
+    .sell-nft,
+    .nft-shop,
+    .sellers{
+        padding: 0 20px;
+    }
+
+    nav a.logo{
+        display: none;
+    }
+
+    nav .links a{
+        font-size: 12px;
+    }
+
+    nav .login button{
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    footer{
+        padding: 100px 40px;
+    }
+
+    footer h3{
+        font-size: 38px;
+    }
+
+
+}
+
+.header h1 {
+    text-align: center; /* Centra el texto horizontalmente */
+    color: #0b0909;
+    padding-top: 10px; /* Espaciado superior para no pegarse al borde del navegador */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contenedor {
+    position: relative;
+}
+
+.texto {
+    position: absolute;
+    top: 50%; /* Ajusta la posición vertical del texto */
+    left: 50%; /* Ajusta la posición horizontal del texto */
+    transform: translate(-50%, -50%); /* Centra el texto vertical y horizontalmente */
+    text-align: justify; /* Alinea el texto al centro */
+    shape-outside: url("assets/IMG_3957.JPG"); /* Utiliza la forma de la imagen como contorno del texto */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente para resaltar el texto */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.contenedor .texto .p1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-indent: 30px; /* Define la cantidad de sangría */
+}
+
+.contenedor-imagenes {
+    display: flex; /* Utiliza flexbox para colocar las imágenes en línea */
+    justify-content: center;
+}
+
+.contenedor-imagenes img {
+    width: 600px; /* Ancho de las imágenes */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-right: 10px; /* Margen derecho entre las imágenes */
+}
+
+.contenedor h5 {
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 285px;
+}
+
+.fuente2 {
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 1216px;
+}
+
+.fuente3 {
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 810px;
+}
+
+.contenedor2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.texto2 {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente para resaltar el texto */
+    font-family: 'Times New Roman', Times, serif;
+    width: 1000px; /* Ancho del contenedor */
+    padding: 10px; /* Relleno interno para el contenedor (opcional) */
+    text-align: justify; /* Justifica el texto dentro del contenedor */
+    font-size: 18px;
+}
+
+.contenedor2 .texto2 .p1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-indent: 30px; /* Define la cantidad de sangría */
+    text-align: justify;
+}
+
+.imagen3 {
+    display: flex;
+    justify-content: center;
+}
+
+.imagen3 img {
+    width: 400px; /* Ancho de las imágenes */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-right: 10px; /* Margen derecho entre las imágenes */
+}
+
+footer{ 
+    background-color: #000;
+    color: #fff;
+    padding: 100px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer h3{
+    font-size: 48px;
+}
+
+footer .right{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 26px;
+}
+
+footer .right .links{
+    display: flex;
+    gap: 30px;
+}
+
+footer .right .links a{
+    color: #989898;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+footer .right .links a:hover{
+    color: #fff;
+}
+
+footer .right .social{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social a {
+    margin-right: 10px; /* Espaciado entre íconos */
+    font-size: 24px;    /* Tamaño de los íconos */
+    color: #333;        /* Color de los íconos */
+}
+.social a:hover {
+    color: #ffffff;    /* Color de los íconos al pasar el ratón */
+}
+
+
+footer .right p{
+    font-size: 13px;
+    color: #777;
+}
+
+
+@media screen and (max-width: 1200px) {
+    footer .links a{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    footer{
+        flex-direction: column;
+        padding: 60px 40px;
+    }
+
+    footer h3{
+        margin-bottom: 40px;
+        font-size: 32px;
+    }
+
+    footer .right{
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer{
+        padding: 40px 20px;
+    }
+}
